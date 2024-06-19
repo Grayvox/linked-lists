@@ -40,4 +40,11 @@ class LinkedList
 
     at(index, node.next_node, current_index + 1)
   end
+
+  def pop(node = @head)
+    return nil if @head.nil? || @head.next_node.nil?
+    return node.next_node = nil if node.next_node.next_node.nil?
+
+    pop(node.next_node)
+  end
 end
