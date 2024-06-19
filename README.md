@@ -11,7 +11,7 @@ This implementation includes the following methods to go with the object:
 - [x] `#at(index)` -- returns the node at the given index
 - [x] `#pop` -- removes the last element from the list
 - [x] `#contains?(value)` -- returns true if the passed in value is in the list and otherwise returns false.
-- [ ] `#find(value)` -- returns the index of the node containing value, or nil if not found.
+- [x] `#find(value)` -- returns the index of the node containing value, or nil if not found.
 - [ ] `#to_s` -- represent LinkedList objects as strings, so you can print them out and preview them in the console. Format is: ( value ) -> ( value ) -> ( value ) -> nil
 - [ ] `#insert_at(value, index)` -- inserts a new node with the provided value at the given index.
 - [ ] `#remove_at(index)` -- removes the node at the given index.

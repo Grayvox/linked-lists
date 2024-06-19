@@ -54,10 +54,11 @@ class LinkedList
 
     contains?(value, node.next_node)
   end
-end
 
-list = LinkedList.new
-list.append(1)
-list.append(2)
-list.append(3)
-puts list.contains?(1)
+  def find(value, node = @head, current_index = 1)
+    return current_index if value == node.value
+    return nil if node.next_node.nil?
+
+    find(value, node.next_node, current_index + 1)
+  end
+end
