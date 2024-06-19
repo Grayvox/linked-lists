@@ -3,7 +3,7 @@
 Creates a functional Linked List object in Ruby!
 This implementation includes the following methods to go with the object:
 
-- [ ] `#append(value)` -- adds a new node containing value to the end of the list
+- [x] `#append(value)` -- adds a new node containing value to the end of the list
 - [ ] `#prepend(value)` -- adds a new node containing value to the start of the list
 - [ ] `#size` -- returns the total number of nodes in the list
 - [x] `#head` -- returns the first node in the list
