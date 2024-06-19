@@ -14,11 +14,17 @@ class LinkedList
     return @head = Node.new(value) if @head.nil?
 
     append_to = tail
-    append_to.next_node = Node.new(value)
+    tail.next_node = Node.new(value)
+  end
+
+  def prepend(value)
+    return @head = Node.new(value) if @head.nil?
+
+    @head = Node.new(value, @head)
   end
 
   def tail(node = @head)
-    return node.value if node.next_node.nil?
+    return node if node.next_node.nil?
 
     tail(node.next_node)
   end
