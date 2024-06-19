@@ -13,7 +13,6 @@ class LinkedList
   def append(value)
     return @head = Node.new(value) if @head.nil?
 
-    append_to = tail
     tail.next_node = Node.new(value)
   end
 
