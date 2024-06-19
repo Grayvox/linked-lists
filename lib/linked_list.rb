@@ -22,6 +22,13 @@ class LinkedList
     @head = Node.new(value, @head)
   end
 
+  def size(node = @head, count = 0)
+    return count if node.nil?
+
+    count += 1
+    size(node.next_node, count)
+  end
+
   def tail(node = @head)
     return node if node.next_node.nil?
 
