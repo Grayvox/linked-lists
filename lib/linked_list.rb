@@ -11,7 +11,7 @@ class LinkedList
   end
 
   def tail(node = @head)
-    return node if node.nil?
+    return node.value if node.next_node.nil?
 
     tail(node.next_node)
   end
