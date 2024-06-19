@@ -61,4 +61,13 @@ class LinkedList
 
     find(value, node.next_node, current_index + 1)
   end
+
+  def to_s(string = '', node = @head)
+    return nil if @head.nil?
+
+    string += "( #{node.value} ) -> "
+    return string += 'nil' if node.next_node.nil?
+
+    to_s(string, node.next_node)
+  end
 end
