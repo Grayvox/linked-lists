@@ -8,7 +8,7 @@ This implementation includes the following methods to go with the object:
 - [x] `#size` -- returns the total number of nodes in the list
 - [x] `#head` -- returns the first node in the list
 - [x] `#tail` -- returns the last node in the list
-- [ ] `#at(index)` -- returns the node at the given index
+- [x] `#at(index)` -- returns the node at the given index
 - [ ] `#pop` -- removes the last element from the list
 - [ ] `#contains?(value)` -- returns true if the passed in value is in the list and otherwise returns false.
 - [ ] `#find(value)` -- returns the index of the node containing value, or nil if not found.

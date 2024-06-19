@@ -34,4 +34,10 @@ class LinkedList
 
     tail(node.next_node)
   end
+
+  def at(index, node = @head, current_index = 1)
+    return node if index == current_index
+
+    at(index, node.next_node, current_index + 1)
+  end
 end
