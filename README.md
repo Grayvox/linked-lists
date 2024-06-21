@@ -14,4 +14,4 @@ This implementation includes the following methods to go with the object:
 - [x] `#find(value)` -- returns the index of the node containing value, or nil if not found.
 - [x] `#to_s` -- represent LinkedList objects as strings, so you can print them out and preview them in the console. Format is: ( value ) -> ( value ) -> ( value ) -> nil
 - [x] `#insert_at(value, index)` -- inserts a new node with the provided value at the given index.
-- [ ] `#remove_at(index)` -- removes the node at the given index.
+- [x] `#remove_at(index)` -- removes the node at the given index.

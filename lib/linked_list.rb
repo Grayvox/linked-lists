@@ -79,4 +79,12 @@ class LinkedList
     new_node = Node.new(value, previous_node.next_node)
     previous_node.next_node = new_node
   end
+
+  def remove_at(index)
+    return nil if index < 1 || index > size
+
+    node = at(index)
+    previous_node = at(index - 1)
+    previous_node.next_node = node.next_node
+  end
 end
